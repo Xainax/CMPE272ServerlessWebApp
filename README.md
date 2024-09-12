@@ -65,11 +65,14 @@ Updating the student record using the command:
 `
 
 ![image](https://github.com/user-attachments/assets/8db0342d-2af8-450c-b597-88098c66798d)
+![image](https://github.com/user-attachments/assets/de580167-a0b5-4a9c-9a0f-5211e756c58f)
+
 
 Deleting the student record using the command:
 `curl -X DELETE "https://l62jip7pib.execute-api.us-west-1.amazonaws.com/dev/students?student_id=123"`
 
 ![image](https://github.com/user-attachments/assets/9ffb31c5-b140-4726-8f93-c819d932ca8f)
+![image](https://github.com/user-attachments/assets/1388629d-0210-4017-8abb-8bac533d4726)
 
 
 # Reflection
