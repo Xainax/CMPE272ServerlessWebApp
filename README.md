@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/01a4c410-51ee-43a8-b3aa-86599fbc2fd5)# CMPE272ServerlessWebApp
+# CMPE272ServerlessWebApp
 
 # Project Description
 I built a serverless web application using AWS Lambda and Amazon DynamoDB as the database service.
@@ -15,14 +15,15 @@ I built a serverless web application using AWS Lambda and Amazon DynamoDB as the
 
 4) After you have created the function you will need to configure the role to allow Lambda to read/write to DynamoDB. Navigate to Configuration, and click on the role name.
 ![image](https://github.com/user-attachments/assets/66337903-b853-4589-b7bc-742c8853e56a)
+![image](https://github.com/user-attachments/assets/01a4c410-51ee-43a8-b3aa-86599fbc2fd5)
 
-5) After clicking the role name, click Add permissions -> Attach policies. Search for AmazonDynamoDBFullAccess and add that permission.
+6) After clicking the role name, click Add permissions -> Attach policies. Search for AmazonDynamoDBFullAccess and add that permission.
 ![image](https://github.com/user-attachments/assets/69807b2a-cb8f-4138-a22d-ec6142ae9133)
 
-6) After you have created the function, you can upload the lambda_function.py file that is located in this GitHub repository and deploy it.
+7) After you have created the function, you can upload the lambda_function.py file that is located in this GitHub repository and deploy it.
 ![image](https://github.com/user-attachments/assets/5230732d-4f39-44bf-b593-f6f43e18abe8)
 
-7) Now, search for API Gateway and create a new REST API. Download the StudentAPI-dev-swagger.json file and you can import the API.
+8) Now, search for API Gateway and create a new REST API. Download the StudentAPI-dev-swagger.json file and you can import the API.
 
 
 
