@@ -1,4 +1,4 @@
-# CMPE272ServerlessWebApp
+![image](https://github.com/user-attachments/assets/218000de-0152-42d1-a057-46cd875846ea)![image](https://github.com/user-attachments/assets/218000de-0152-42d1-a057-46cd875846ea)# CMPE272ServerlessWebApp
 
 # Project Description
 I built a serverless web application using AWS Lambda and Amazon DynamoDB as the database service.
@@ -22,7 +22,11 @@ I built a serverless web application using AWS Lambda and Amazon DynamoDB as the
 7) After you have created the function, you can upload the lambda_function.py file that is located in this GitHub repository and deploy it.
 ![image](https://github.com/user-attachments/assets/5230732d-4f39-44bf-b593-f6f43e18abe8)
 
-8) Now, search for API Gateway and create a new REST API. Download the StudentAPI-dev-swagger.json file and you can import the API.
+8) Now, search for API Gateway and create a new REST API named `StudentAPI`.
+
+9) Create a resource called students and enable CORS.
+
+10) You will now need to create methods for the CRUD operations so click Create method. For your method type, you will need to make a method for POST, PUT, and DELETE. For each method, make sure to choose Lambda function as integration type, enable Lambda proxy integration, and connect your Lambda function. 
 
 
 
