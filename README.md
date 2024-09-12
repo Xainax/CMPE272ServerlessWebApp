@@ -23,8 +23,10 @@ I built a serverless web application using AWS Lambda and Amazon DynamoDB as the
 ![image](https://github.com/user-attachments/assets/5230732d-4f39-44bf-b593-f6f43e18abe8)
 
 8) Now, search for API Gateway and create a new REST API named `StudentAPI`.
+![image](https://github.com/user-attachments/assets/2795624e-de80-4ce0-8c5b-7453429437ed)
 
 9) Create a resource called students and enable CORS.
+![image](https://github.com/user-attachments/assets/e7e33145-fc2c-48b0-8b44-d8afdc6243e8)
 
 10) You will now need to create methods for the CRUD operations so click Create method. For your method type, you will need to make a method for POST, PUT, and DELETE. For each method, make sure to choose Lambda function as integration type, enable Lambda proxy integration, and connect your Lambda function.
 ![image](https://github.com/user-attachments/assets/6ffc6c58-6e8f-4259-a04e-d489a0fe4de6)
@@ -33,7 +35,8 @@ I built a serverless web application using AWS Lambda and Amazon DynamoDB as the
 ![image](https://github.com/user-attachments/assets/d9beab15-aad7-46a0-b605-f401b139cc28)
 
 11) After all methods are created, you can deploy the API and create a new stage for it. Make sure to mark down or keep track of the Invoke URL after you deploy the API.
-12) Now that you have the Invoke URL, you can run curl commands or use Postman to test your operations.
+    
+13) Now that you have the Invoke URL, you can run curl commands or use Postman to test your operations.
 
 # Results
 Creating a new student record using the command:
@@ -42,15 +45,16 @@ Creating a new student record using the command:
   -H 'Content-Type: application/json' \
   -d '{ "student_id": "123", "name": "John Doe", "course": "Enterprise Software" }'
  `
+ 
 ![image](https://github.com/user-attachments/assets/4003fc85-4ee6-43a9-afa8-6c567655e27d)
 
 Populated table using curl commands and ensuring it shows on DynamoDB:
 ![image](https://github.com/user-attachments/assets/924d7b95-aaf5-4ad3-97ee-a47a5929dd00)
 ![image](https://github.com/user-attachments/assets/b2cff561-a65c-4c97-bb5c-acf4a44fd024)
 
-
 Reading the newly created student record using the command:
 `curl -X GET \ "https://l62jip7pib.execute-api.us-west-1.amazonaws.com/dev/students?student_id=123"`
+
 ![image](https://github.com/user-attachments/assets/6b6b30b7-67c8-44dc-a9aa-579e885ea606)
 
 Updating the student record using the command:
@@ -59,10 +63,12 @@ Updating the student record using the command:
   -H 'Content-Type: application/json' \
   -d '{ "name": "John Doe", "course": "Advanced Cloud Computing" }'
 `
+
 ![image](https://github.com/user-attachments/assets/8db0342d-2af8-450c-b597-88098c66798d)
 
 Deleting the student record using the command:
 `curl -X DELETE "https://l62jip7pib.execute-api.us-west-1.amazonaws.com/dev/students?student_id=123"`
+
 ![image](https://github.com/user-attachments/assets/9ffb31c5-b140-4726-8f93-c819d932ca8f)
 
 
