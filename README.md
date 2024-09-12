@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/218000de-0152-42d1-a057-46cd875846ea)![image](https://github.com/user-attachments/assets/218000de-0152-42d1-a057-46cd875846ea)# CMPE272ServerlessWebApp
+# CMPE272ServerlessWebApp
 
 # Project Description
 I built a serverless web application using AWS Lambda and Amazon DynamoDB as the database service.
