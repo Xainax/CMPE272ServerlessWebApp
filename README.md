@@ -26,9 +26,14 @@ I built a serverless web application using AWS Lambda and Amazon DynamoDB as the
 
 9) Create a resource called students and enable CORS.
 
-10) You will now need to create methods for the CRUD operations so click Create method. For your method type, you will need to make a method for POST, PUT, and DELETE. For each method, make sure to choose Lambda function as integration type, enable Lambda proxy integration, and connect your Lambda function. 
+10) You will now need to create methods for the CRUD operations so click Create method. For your method type, you will need to make a method for POST, PUT, and DELETE. For each method, make sure to choose Lambda function as integration type, enable Lambda proxy integration, and connect your Lambda function.
+![image](https://github.com/user-attachments/assets/6ffc6c58-6e8f-4259-a04e-d489a0fe4de6)
+![image](https://github.com/user-attachments/assets/74ad18e7-34fd-4f4e-9d21-40e3953ba6a2)
+![image](https://github.com/user-attachments/assets/675e75a9-b3a0-4d92-aefb-56fa09163ab8)
+![image](https://github.com/user-attachments/assets/d9beab15-aad7-46a0-b605-f401b139cc28)
 
-
+11) After all methods are created, you can deploy the API and create a new stage for it. Make sure to mark down or keep track of the Invoke URL after you deploy the API.
+12) Now that you have the Invoke URL, you can run curl commands or use Postman to test your operations.
 
 # Results
 Creating a new student record using the command:
@@ -38,6 +43,11 @@ Creating a new student record using the command:
   -d '{ "student_id": "123", "name": "John Doe", "course": "Enterprise Software" }'
  `
 ![image](https://github.com/user-attachments/assets/4003fc85-4ee6-43a9-afa8-6c567655e27d)
+
+Populated table using curl commands and ensuring it shows on DynamoDB:
+![image](https://github.com/user-attachments/assets/924d7b95-aaf5-4ad3-97ee-a47a5929dd00)
+![image](https://github.com/user-attachments/assets/b2cff561-a65c-4c97-bb5c-acf4a44fd024)
+
 
 Reading the newly created student record using the command:
 `curl -X GET \ "https://l62jip7pib.execute-api.us-west-1.amazonaws.com/dev/students?student_id=123"`
