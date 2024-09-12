@@ -15,7 +15,6 @@ I built a serverless web application using AWS Lambda and Amazon DynamoDB as the
 
 4) After you have created the function you will need to configure the role to allow Lambda to read/write to DynamoDB. Navigate to Configuration, and click on the role name.
 ![image](https://github.com/user-attachments/assets/66337903-b853-4589-b7bc-742c8853e56a)
-![image](https://github.com/user-attachments/assets/01a4c410-51ee-43a8-b3aa-86599fbc2fd5)
 
 6) After clicking the role name, click Add permissions -> Attach policies. Search for AmazonDynamoDBFullAccess and add that permission.
 ![image](https://github.com/user-attachments/assets/69807b2a-cb8f-4138-a22d-ec6142ae9133)
